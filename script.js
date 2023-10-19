@@ -2,7 +2,7 @@ var cartValue = document.getElementById("cartvalue");
 var cartButton = document.getElementById("cart");
 
 var addButtons = document.getElementsByClassName("button");
-
+//creating a obkject array
 var items = [
   {
     name: "This was our pact",
@@ -89,7 +89,7 @@ var items = [
     cents: 49,
   },
 ];
-
+//function to update cart 
 function updateCart() {
   let cart = 0;
   for (index = 0; index < items.length; index++) {
@@ -107,7 +107,7 @@ for (let i = 0; i < addButtons.length; i++) {
 
 var finalDollars = 0;
 var finalCents = 0;
-
+//adding the price with dollar and cents
 function updatePrice() {
   let totalPriceInCents = 0;
 
@@ -135,6 +135,6 @@ cartButton.onclick = () => {
       );
     }
   }
-
-  console.log(finalDollars,finalCents);
+//show 
+  console.log(finalDollars,finalCents);  //dollar and cents logs
 };
