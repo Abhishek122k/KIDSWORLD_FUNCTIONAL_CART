@@ -1,4 +1,4 @@
-var cartValue = document.getElementById("cart-value");
+var cartValue = document.getElementById("cartvalue");
 var cartButton = document.getElementById("cart");
 
 var addButtons = document.getElementsByClassName("button");
@@ -136,7 +136,5 @@ cartButton.onclick = () => {
     }
   }
 
-  console.log(
-    "The total amount is " + finalDollars + "$ and " + finalCents + " cents"
-  );
+  console.log(finalDollars,finalCents);
 };
