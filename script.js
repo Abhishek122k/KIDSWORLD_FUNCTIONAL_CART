@@ -136,5 +136,5 @@ cartButton.onclick = () => {
     }
   }
 //show 
-  console.log(finalDollars,finalCents);  //dollar and cents logs
+  console.log(finalDollars,finalCents);  //dollar and cent logs
 };
