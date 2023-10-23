@@ -139,21 +139,4 @@ cartButton.onclick = () => {
   console.log(finalDollars,finalCents);  //dollar and cent logs
 };
 
-cartButton.onclick = () => {
-  updatePrice();
-  let cartMessage = "Cart Items:\n";
-
-  for (let index = 0; index < items.length; index++) {
-      if (items[index].quantity !== 0) {
-          cartMessage +=
-              `${items[index].name} - Quantity: ${items[index].quantity}\n`;
-      }
-  }
-
-  cartMessage += `Total Price: $${finalDollars}.${finalCents}`;
-
-  let whatsappURL = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(cartMessage);
-
-   window.open(whatsappURL, '_blank');
-};
 
